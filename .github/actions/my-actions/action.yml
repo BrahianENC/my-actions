@@ -1,0 +1,10 @@
+name: "My action"
+description: "Test my action"
+
+runs:
+  using: "composite" # Action composite para reusar los steps (Agrupa steps)
+
+  steps:
+    - name: Hola mundo
+      run: echo "Hola mundo"
+      shell: bash # Es una directiva para ejecutar comandos

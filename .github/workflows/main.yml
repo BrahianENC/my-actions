@@ -1,0 +1,14 @@
+name: Test Composite Action
+
+on: [push]
+
+jobs:
+  local-action:
+    runs-on: ubuntu-lastest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+      
+      - name: mis actions
+        run: ./.github/actions/my-actions # De manera automatica detecta el archivo action.yml
