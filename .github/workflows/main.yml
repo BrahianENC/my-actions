@@ -11,6 +11,6 @@ jobs:
         uses: actions/checkout@v3
       
       - name: mis actions
-        run: ./.github/actions/my-actions # De manera automatica detecta el archivo action.yml
+        uses: ./.github/actions/my-actions # De manera automatica detecta el archivo action.yml con uses
         with: # Permite pasar parametro a las acciones
           message: "Brahian"
