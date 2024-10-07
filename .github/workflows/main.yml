@@ -12,3 +12,5 @@ jobs:
       
       - name: mis actions
         run: ./.github/actions/my-actions # De manera automatica detecta el archivo action.yml
+        with: # Permite pasar parametro a las acciones
+          message: "Brahian"
